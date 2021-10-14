@@ -1,0 +1,54 @@
+<div class="container">
+    
+    <div class="logout">
+        <app-logout></app-logout>
+    </div>
+    
+    <h1 class="h1-fluid">
+        <br>
+        Vendedor
+        <br>
+        <br>
+    </h1>
+
+    <div class="row">
+        <div class="col-4">
+        <div class="card" style="width: 18rem; height: 12rem">
+            <img src="" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Lista de Productos</h5>
+                    <p class="card-text">Observar todos los productos del vendedor que hay en la base de datos.</p>
+                    <div class="boton">
+                    <a href="vendedor/productos/{{id}}" class="btn btn-primary" >Ir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card" style="width: 18rem; height: 12rem">
+                <img src="" class="card-img-top" >
+                <div class="card-body">
+                    <h5 class="card-title">Realizar Ventas</h5>
+                    <p class="card-text">Publicar una venta.</p>
+                    <div class="boton">
+                    <a href="/vendedor/realizarventa/{{id}}" class="btn btn-primary"> Ir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card" style="width: 18rem; height: 12rem">
+                <img src="" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Mis Datos</h5>
+                    <p class="card-text">Observar datos personales del usuario.</p>
+                    <div class="boton">
+                    <a href="/vendedor/misdatos/{{id}}" class="btn btn-primary">Ir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

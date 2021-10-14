@@ -1,0 +1,18 @@
+.card{
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
+    color: white;
+    margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+  margin-top: 3%;
+}
+.btn.btn-success{
+    margin-top: 20px;
+    
+}
+
+.container-fluid{
+    margin-left: 25%;
+}

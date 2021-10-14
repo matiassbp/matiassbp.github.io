@@ -1,0 +1,47 @@
+/*
+	Color fondo: #632432;
+	Color header: 246355;
+	Color borde: 0F362D;
+	Color iluminado: 369681;
+*/
+
+.form-control{
+    margin-bottom: 5px;
+}
+
+
+#main-container{
+	margin: 100px auto;
+	width: 900px;
+}
+
+table{
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	height: 100%;
+	width: 100%;
+}
+
+th, td{
+	padding: 20px;
+	size: 60px;
+}
+
+thead{
+	background-color: #1f1f1f;
+	border-bottom: solid 5px #6b6b6b;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+}
+
+tr:hover td{
+	background-color: #33a4b3;
+	color: white;
+}
+
+
+

@@ -1,0 +1,21 @@
+img{
+    margin-right: 10px;
+}
+.ultima-capa{
+    max-width: 18rem;
+    margin: auto;
+}
+.hola{
+    background-color: rgba(7, 7, 7, 0.815);
+    color: white;
+}
+.image-down{
+    margin-top: 15px;
+    margin-bottom : 40px;
+}
+.texto-inferior{
+    margin-left: 60px;
+}
+.redes-sociales{
+    margin-left: 40px;
+}

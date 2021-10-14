@@ -1,0 +1,48 @@
+<div class="app">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <img src="http://imgfz.com/i/78wjOcH.png" width="44" height="45" [routerLink]="['home']">
+      <!-- logo telefono al lado de la navbar -->
+      <a class="navbar-brand" href="#">Inventario web</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li><a routerLink="/home" class="nav-link active" routerLinkActive="active">Home</a></li>
+          <li><a routerLink="/about" class="nav-link active" routerLinkActive="active">Nosotros</a></li>
+        </ul>
+        <div class="d-flex">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li><a routerLink="/login" class="nav-link active" routerLinkActive="active">Login</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>
+  <br><br><br><br><br><br><br><br>
+
+  <footer class="hola">
+    <div class="ultima-capa">
+      <img src="http://imgfz.com/i/cd0hyql.png" style="margin-left: 20px; margin-top: 30px;" width="300" height="50"
+        class="image-down" alt="FastCall">
+      <div class="texto-inferior">
+        <p>Contacto: <a class="header--custom-text" href="mailto:contacto@fastcall.cl">contacto@fastcall.cl</a></p>
+        <p>Ubicacion: <a class="header--custom-text"
+            href="https://www.google.com/maps/@-33.4317941,-70.6183476,3a,75y,240.68h,91.24t/data=!3m7!1e1!3m5!1sIErdMu2EE15fHaxe0GntWA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DIErdMu2EE15fHaxe0GntWA%26cb_client%3Dmaps_sv.tactile.gps%26w%3D203%26h%3D100%26yaw%3D211.86595%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656">Av
+            Manuel Montt #370</a></p>
+        <div class="redes-sociales">
+          <a href="https://www.instagram.com/fastcall"><img src="http://imgfz.com/i/HcetlWh.png" width="40" height="40"
+              class="image-down" alt="FastCall"></a>
+          <a href="https://www.facebook.com/FastCall.al"><img src="http://imgfz.com/i/I9JDZ4T.png" width="40"
+              height="40" class="image-down" alt="FastCall"> </a>
+          <a href="https://twitter.com/fastcall411"><img src="http://imgfz.com/i/QvBmsKn.png" width="40" height="40"
+              class="image-down" alt="FastCall"> </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>

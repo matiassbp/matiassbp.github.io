@@ -1,0 +1,65 @@
+
+<div class="container">
+    <h1>Editar Usuario "{{usuarioselected.nombre}}"</h1>
+    <div class="row">
+        <div class="column">
+            <h4>Nombre: </h4>
+        </div>
+        <div class="column">
+            <div class="linea">
+                <div class="input-group mb-3">
+                    <input [(ngModel)]="nombre" type="text" class="form-control" placeholder="Nombre y apellido"
+                        aria-label="Recipient's username" aria-describedby="button-addon2" value={{usuarioselected.nombre}}>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h4>User name: </h4>
+        </div>
+        <div class="column">
+            <div class="linea">
+                <div class="input-group mb-3">
+                    <input [(ngModel)]="username" type="text" class="form-control" placeholder="Usuario"
+                        aria-label="Recipient's username" aria-describedby="button-addon2" value={{usuarioselected.username}}>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h4>Email: </h4>
+        </div>
+        <div class="column">
+            <div class="linea">
+                <div class="input-group mb-3">
+                    <input [(ngModel)]="email" type="text" class="form-control" placeholder="Email"
+                        aria-label="Recipient's username" aria-describedby="button-addon2" value={{usuarioselected.email}}>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="column">
+            <h4>Contraseña: </h4>
+        </div>
+        <div class="column">
+            <div class="linea">
+                <div class="input-group bg-dark">
+                    <input [(ngModel)]="password" type="password" class="form-control" placeholder="Contraseña" aria-label="Recipient's username with two button addons" value={{usuarioselected.password}}>
+                  </div>
+            </div>
+        </div>
+
+    </div>
+    <div class= "row">
+        <div class="column">
+            <div class="boton">
+                <input (click)="editarUsuario()" class="btn btn-primary" type="submit" value="Enviar">
+            </div>
+        </div>
+    </div>

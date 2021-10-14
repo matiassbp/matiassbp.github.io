@@ -1,0 +1,21 @@
+.card{
+    margin-left: 64px;
+    margin-right: 64px;
+}
+
+.h1-fluid{
+    text-align: center;
+    color: white;
+}
+
+.boton{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.logout{
+    margin-top: 1%;
+    margin-left: 90%;
+}

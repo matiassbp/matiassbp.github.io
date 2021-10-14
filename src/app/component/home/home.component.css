@@ -1,0 +1,13 @@
+.card.bg-dark.mb-3{
+    color: white;
+    max-width: 18rem;
+    margin: auto;
+}
+.imagen-telefonos-pequeñas{
+    width: 255px;
+    height: 255px;
+}
+.card-header{
+    text-align:center;
+    font-size: 24px;
+}

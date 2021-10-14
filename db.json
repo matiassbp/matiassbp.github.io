@@ -1,0 +1,195 @@
+{
+  "usuarios": [
+    {
+      "nombre": "admin",
+      "username": "admin",
+      "email": "admin@gmai.com",
+      "password": "123",
+      "id": 2,
+      "admin": true
+    },
+    {
+      "nombre": "Fran",
+      "username": "pancho",
+      "email": "pancho@gmail.com",
+      "password": "123",
+      "id": 5,
+      "admin": false
+    },
+    {
+      "nombre": "vendedor",
+      "username": "vendedor",
+      "email": "vendedor@gmail.com",
+      "password": "123",
+      "id": 4,
+      "admin": false
+    },
+    {
+      "nombre": "test",
+      "username": "test",
+      "email": "test@gmail.com",
+      "password": "123",
+      "admin": false,
+      "id": 6
+    }
+  ],
+  "productos": [
+    {
+      "nombre": "JuanProducto",
+      "caracteristicas": "juansito123",
+      "cantidad": 1,
+      "precio": 1,
+      "marca": "owo",
+      "codigo": "owo",
+      "vendedor": "nombre vendedor",
+      "idvendedor": 5,
+      "id": 1
+    },
+    {
+      "nombre": "12Producto",
+      "caracteristicas": "mas corta",
+      "cantidad": "12",
+      "precio": "12",
+      "marca": "12",
+      "codigo": "12",
+      "vendedor": "nombre vendedor",
+      "idvendedor": 5,
+      "id": 2
+    },
+    {
+      "nombre": "hhhhhh",
+      "caracteristicas": "hhhhhh",
+      "cantidad": "2",
+      "precio": "2",
+      "marca": "kkkkkkk",
+      "codigo": "kkkkkk",
+      "vendedor": "nombre vendedor",
+      "id": 3
+    },
+    {
+      "nombre": "producto nuevo",
+      "caracteristicas": "producto",
+      "cantidad": "22",
+      "precio": "2222",
+      "marca": "marcaaaaaa",
+      "codigo": "codigo",
+      "vendedor": "nombre vendedor",
+      "idvendedor": 4,
+      "id": 4
+    },
+    {
+      "nombre": "iphone X",
+      "caracteristicas": "smartphone de gama alta",
+      "cantidad": "5",
+      "precio": "333333333",
+      "marca": "apple",
+      "codigo": "aaa",
+      "vendedor": "nombre vendedor",
+      "idvendedor": 4,
+      "id": 6
+    },
+    {
+      "nombre": "1111111",
+      "caracteristicas": "111111",
+      "cantidad": "1",
+      "precio": "1111",
+      "marca": "1111",
+      "categoria": "1111",
+      "vendedor": "nombre vendedor",
+      "idvendedor": 4,
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "nombre": "1111",
+      "caracteristicas": "11",
+      "cantidad": "11",
+      "precio": "11",
+      "marca": "11",
+      "categoria": "11",
+      "vendedor": "nombre vendedor",
+      "idvendedor": 5,
+      "id": 9
+    },
+    {
+      "nombre": "leche entera",
+      "caracteristicas": "aaaa",
+      "cantidad": "111",
+      "precio": "1111",
+      "marca": "adawd",
+      "categoria": "adawd",
+      "vendedor": "nombre vendedor",
+      "idvendedor": 4,
+      "id": 10
+    },
+    {
+      "nombre": "xd",
+      "caracteristicas": "xd",
+      "cantidad": "111",
+      "precio": "111",
+      "marca": "xd",
+      "categoria": "xd",
+      "vendedor": "nombre vendedor",
+      "idvendedor": 5,
+      "id": 11
+    }
+  ],
+  "ventas2": [
+    {
+      "codigo": "777-666",
+      "cantidad": "12",
+      "idvendedor": 1,
+      "id": 1
+    },
+    {
+      "codigo": "666-777",
+      "cantidad": "5",
+      "idvendedor": 4,
+      "id": 2
+    },
+    {
+      "codigo": "121",
+      "cantidad": "1212",
+      "idvendedor": 4,
+      "id": 3
+    },
+    {
+      "codigo": "888-888",
+      "cantidad": "1",
+      "idvendedor": 4,
+      "id": 4
+    },
+    {
+      "codigo": "222-222",
+      "cantidad": "2",
+      "idvendedor": 4,
+      "id": 5
+    },
+    {
+      "codigo": "estesi",
+      "cantidad": "3",
+      "idvendedor": 4,
+      "id": 6
+    },
+    {
+      "codigo": "xdnoma",
+      "cantidad": "1",
+      "idvendedor": 5,
+      "id": 7
+    },
+    {
+      "codigo": "aaaa",
+      "cantidad": "1",
+      "idvendedor": 5,
+      "id": 8
+    },
+    {
+      "codigo": "bbb",
+      "cantidad": "1",
+      "idvendedor": 5,
+      "id": 9
+    }
+  ]
+}

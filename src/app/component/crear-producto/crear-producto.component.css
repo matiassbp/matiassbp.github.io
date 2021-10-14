@@ -1,0 +1,44 @@
+
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  h1{
+      color: white;
+      margin-top: 10px;
+  }
+
+  h4{
+      color: white;
+      margin-top: 20px;
+  }
+
+  p{
+    color: white;
+  }
+
+  a{
+    margin-top: 20px;
+    margin-left: 100px;
+  }
+
+  .linea{
+    margin-top: 5px;
+  }
+
+  .boton{
+    position: absolute;
+    right: 43px;
+    color: white;
+  }

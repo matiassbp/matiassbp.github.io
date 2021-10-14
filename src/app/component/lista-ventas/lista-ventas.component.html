@@ -1,0 +1,36 @@
+<div class="container">
+    <app-volver-atras></app-volver-atras>
+</div>
+
+<div id="main-container" class="row">
+    <div class="column">
+        <input type="text" class="form-control" name="username" placeholder="Filtro" required="" autofocus="" #dato1 />
+    </div>
+
+    <div class="column">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Codigo producto</th>
+                    <th>Cantidad</th>
+                    <th>Id Vendedor</th>
+                    <!-- 
+                    <th>Marca</th>
+                    <th>Categoria del producto</th>
+                    <th>Usuario Vendedor</th>
+                    -->
+                </tr>
+            </thead>
+
+            <tbody *ngFor="let venta of ventas">
+                <tr>
+                    <td>{{venta.codigo}}</td>
+                    <td>{{venta.cantidad}}</td>
+                    <td>{{venta.idvendedor}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

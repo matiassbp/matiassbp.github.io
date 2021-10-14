@@ -1,0 +1,65 @@
+
+<div class="container">
+    <h1>Agregar Usuario</h1>
+    <div class="row">
+        <div class="column">
+            <h4>Nombre: </h4>
+        </div>
+        <div class="column">
+            <div class="linea">
+                <div class="input-group mb-3">
+                    <input type="text" [(ngModel)]="nombre" class="form-control" placeholder="Nombre y apellido"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h4>User name: </h4>
+        </div>
+        <div class="column">
+            <div class="linea">
+                <div class="input-group mb-3">
+                    <input type="text" [(ngModel)]="username" class="form-control" placeholder="Usuario"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h4>Email: </h4>
+        </div>
+        <div class="column">
+            <div class="linea">
+                <div class="input-group mb-3">
+                    <input type="text" [(ngModel)]="email" class="form-control" placeholder="Email"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="column">
+            <h4>Contraseña: </h4>
+        </div>
+        <div class="column">
+            <div class="linea">
+                <div class="input-group bg-dark">
+                    <input type="password" [(ngModel)]="password" class="form-control" placeholder="Contraseña" aria-label="Recipient's username with two button addons">
+                  </div>
+            </div>
+        </div>
+
+    </div>
+    <div class= "row">
+        <div class="column">
+            <div class="boton">
+                <input class="btn btn-primary" (click)="crearVendedor()" type="submit" value="Agregar">
+            </div>
+        </div>
+    </div>

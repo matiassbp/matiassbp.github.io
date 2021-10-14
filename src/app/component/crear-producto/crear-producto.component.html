@@ -1,0 +1,93 @@
+<div class="container">
+    <h1>Crear producto</h1>
+    <div class="row">
+        <div class="column">
+            <h4>Nombre: </h4>
+        </div>
+        <div class="column">
+            <div class="linea">
+                <div class="input-group mb-3">
+                    <input type="text" [(ngModel)]="nombre" class="form-control" placeholder="Nombre del producto"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h4>Caracteristicas: </h4>
+        </div>
+        <div class="column">
+            <div class="linea">
+                <div class="input-group mb-3">
+                    <input type="text" [(ngModel)]="caracteristicas1" class="form-control" placeholder="Caracteristicas del producto" aria-label="Recipient's username"
+                        aria-describedby="button-addon2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h4>Cantidad: </h4>
+        </div>
+        <div class="column">
+            <div class="linea">
+                <div class="input-group mb-3">
+                    <input type="text" [(ngModel)]="cantidad1" class="form-control" placeholder="Cantidad" aria-label="Recipient's username"
+                        aria-describedby="button-addon2">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h4>Precio: </h4>
+        </div>
+        <div class="column">
+            <div class="linea">
+                <div class="input-group mb-3">
+                    <span class="input-group-text">$</span>
+                    <input type="text" [(ngModel)]="precio1" class="form-control" aria-label="Amount (to the nearest dollar)">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <h4>Marca: </h4>
+        </div>
+        <div class="column">
+            <div class="linea">
+                <div class="input-group bg-dark">
+                    <input type="text" [(ngModel)]="marca1" class="form-control" placeholder="Marca del producto"
+                        aria-label="Recipient's username with two button addons">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <h4>Categoria: </h4>
+        </div>
+        <div class="column">
+            <div class="linea">
+                <div class="input-group bg-dark">
+                    <input type="text" [(ngModel)]="categoria1" class="form-control" placeholder="categoria del producto"
+                        aria-label="Recipient's username with two button addons">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="column">
+            <div class="boton">
+                <input class="btn btn-primary" (click)="crearProducto()" type="submit" value="Enviar">
+            </div>
+        </div>
+    </div>

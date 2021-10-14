@@ -1,0 +1,149 @@
+<br>
+<h1>Bienvenido al area de reportes</h1>
+<div class="container">
+    <app-volver-atras></app-volver-atras>
+</div>
+<div class="row">
+    <div class="col-3">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Generar Reporte</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Por empleados</h6>
+                <p class="card-text">Se generara un reporte de las ventas de los empleados.</p>
+                <button (click)="cambiarfiltro('Empleados')" type="button" class="btn btn-success">Generar</button>
+                <a href="#" class="card-link">Reportar Problema</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-3">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Generar Reporte</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Por sucursales</h6>
+                <p class="card-text">Se generara un reporte de las ventas segun sucursales.</p>
+                <button (click)="cambiarfiltro('Sucursales')" type="button" class="btn btn-success">Generar</button>
+                <a href="#" class="card-link">Reportar Problema</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-3">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Generar Reporte</h5>
+                <h6 class="card-subtitle mb-2 text-muted">De productos</h6>
+                <p class="card-text">Se generara un reporte de los productos en venta y su Stock.</p>
+                <button (click)="cambiarfiltro('Venta')" type="button" class="btn btn-success">Generar</button>
+                <a href="#" class="card-link">Reportar Problema</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-3">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Generar Reporte</h5>
+                <h6 class="card-subtitle mb-2 text-muted">De inventario</h6>
+                <p class="card-text">Se generara un reporte de los productos en bodega y su Stock.</p>
+                <button (click)="cambiarfiltro('Productos')" type="button" class="btn btn-success">Generar</button>
+                <a href="#" class="card-link">Reportar Problema</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-3">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Generar Reporte</h5>
+                <h6 class="card-subtitle mb-2 text-muted">De ganancias</h6>
+                <p class="card-text">Se generara un reporte de las ventas de la empresa.</p>
+                <button (click)="cambiarfiltro('Ventas')" type="button" class="btn btn-success">Generar</button>
+                <a href="#" class="card-link">Reportar Problema</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-container" class="row">
+
+        <div class="column">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>{{filtro}}</option>
+                <option value="1">Opcion 1</option>
+                <option value="2">Opcion 2</option>
+                <option value="3">Opcion 3</option>
+            </select>
+        </div>
+
+        <div class="fechas">
+            <div class="row">
+                <div class="col">
+                    <a>Fecha 1</a>
+                    <input type="text" class="form-control" name="username" placeholder="DD-MM-YYYY" required=""
+                        autofocus="" />
+                </div>
+                <div class="col">
+                    <a>Fecha 2</a>
+                    <input type="text" class="form-control" name="username" placeholder="DD-MM-YYYY" required=""
+                        autofocus="" />
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Caracterisiticas</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Marca</th>
+                        <th>Categoria del producto</th>
+                        <th>Usuario Vendedor</th>
+                    </tr>
+                </thead>
+
+                <tr>
+                    <td>iphoneX</td>
+                    <td>Telefono inteligente, Camara HD, bateria 20000Mha</td>
+                    <td>1</td>
+                    <td>$3.000.000</td>
+                    <td>Apple</td>
+                    <td>Smartphones</td>
+                    <td>Franvg</td>
+                </tr>
+                <tr>
+                    <td>iphone8</td>
+                    <td>Telefono inteligente, Camara HD, bateria 20000Mha</td>
+                    <td>5</td>
+                    <td>$3.000.000</td>
+                    <td>Apple</td>
+                    <td>Smartphones</td>
+                    <td>matib0</td>
+                </tr>
+                <tr>
+                    <td>iphone7</td>
+                    <td>Telefono inteligente, Camara HD, bateria 20000Mha</td>
+                    <td>3</td>
+                    <td>$3.000.000</td>
+                    <td>Apple</td>
+                    <td>Smartphones</td>
+                    <td>Hans</td>
+                </tr>
+                <tr>
+                    <td>iphone6</td>
+                    <td>Telefono inteligente, Camara HD, bateria 20000Mha</td>
+                    <td>10</td>
+                    <td>$3.000.000</td>
+                    <td>Apple</td>
+                    <td>Smartphones</td>
+                    <td>Hans</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,53 @@
+<app-volver-atras></app-volver-atras>
+<div class=" formulario">
+    <div class="row">
+
+        <div class="col-6">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Filtro" aria-label="Recipient's username"
+                    aria-describedby="button-addon2">
+                <button (click)="cambiarVariable()" class="btn btn-outline-secondary bg-dark" type="button"
+                    id="button-addon2">Agregar Usuario</button>
+            </div>
+
+            <div class="column">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Usuario</th>
+                            <th>Email</th>
+                            <th>Botones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let usuario of usuarios">
+                            <td>{{usuario.nombre}}</td>
+                            <td>{{usuario.username}}</td>
+                            <td>{{usuario.email}}</td>
+                            <td>
+
+                                <a (click)="mostraredit(usuario)" class="btn btn-secondary btn-sm">
+                                    <i class="material-icons">Edit</i>
+                                </a>
+                                <a class="btn btn-danger btn-sm">
+                                    <i (click)="eliminarUsuario(usuario)" class="material-icons">Delete</i>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <div class="col-6">
+            <div class="agregar">
+                <app-crear-vendedor *ngIf="MostrarCrear"></app-crear-vendedor>
+            </div>
+            <div class="editar">
+                <app-editar-vendedor [usuarioselected]="usuarioSelected" *ngIf="MostrarEditar"></app-editar-vendedor>
+            </div>
+        </div>
+    </div>
+</div>

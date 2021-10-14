@@ -1,0 +1,59 @@
+<app-volver-atras></app-volver-atras>
+<div class=" formulario">
+    <div class="row">
+
+        <div class="col-6">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Filtro" aria-label="Recipient's username"
+                    aria-describedby="button-addon2">
+                <button (click)="cambiarVariable()" class="btn btn-outline-secondary bg-dark" type="button"
+                    id="button-addon2">Agregar producto</button>
+            </div>
+
+            <div class="column">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Caracterisiticas</th>
+                            <th>Cantidad</th>
+                            <th>Precio</th>
+                            <th>Marca</th>
+                            <th>Categoria del producto</th>
+                            <th>Opciones</th>
+                        </tr>
+                    </thead>
+
+                    <tbody *ngFor="let producto of productos">
+                        <tr *ngIf="(producto.idvendedor == id)">
+                            <td>{{producto.nombre}}</td>
+                            <td>{{producto.caracteristicas}}</td>
+                            <td>{{producto.cantidad}}</td>
+                            <td>{{producto.precio}}</td>
+                            <td>{{producto.marca}}</td>
+                            <td>{{producto.categoria}}</td>
+                            <td>
+                                <a (click)="mostraredit(producto)" class="btn btn-secondary btn-sm">
+                                    <i class="material-icons">Edit</i>
+                                </a>
+                                <a (click)="eliminarProducto(producto)" class="btn btn-danger btn-sm">
+                                    <i class="material-icons">Delete</i>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <div class="col-6">
+            <div class="agregar">
+                <app-crear-producto *ngIf="MostrarCrear"></app-crear-producto>
+            </div>
+            <div class="editar">
+                <app-editar-producto [productoSelected]="productoSelected" *ngIf="MostrarEditar"></app-editar-producto>
+            </div>
+        </div>
+    </div>
+</div>

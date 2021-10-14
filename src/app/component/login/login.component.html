@@ -1,0 +1,25 @@
+<div class="xd">
+      <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <div class="fadeIn first">
+            <img src="http://imgfz.com/i/sjvlQ1W.png" width="80%" height="50%" />
+            <br>
+            <br>
+          </div>
+          <!-- Login Form -->
+          <form class="fadeIn second">
+            <div>
+              <img class="fadeIn second" style=" bottom:2px; right:5px; width:24px; height:24px;"
+                src="http://imgfz.com/i/lDWvI5O.png" id="input_img">
+              <input [(ngModel)]="username" type="email" id="login" class="fadeIn second" name="username" placeholder="Email">
+            </div>
+            <div>
+              <img class="fadeIn second" style=" bottom:2px; right:5px; width:24px; height:24px;"
+                src="http://imgfz.com/i/lgLOMEu.png" id="input_img">
+              <input [(ngModel)]="password" type="password" id="password" class="fadeIn third"  name="password" placeholder="Contraseña">
+            </div>
+            <input type="submit" class="fadeIn fourth" (click)="login()"  value="Ingresar">
+          </form>
+        </div>
+      </div>
+    </div>
